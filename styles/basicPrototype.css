@@ -1,0 +1,260 @@
+/*Things to change futher implement*/
+/*Gif for each answerExplaination*/
+/*Change MC options to buttons that change colors when selected
+ rather than just using the radio dials*/
+ /*final Page Gif Depending on currentUserScore*/
+
+
+html { 
+	/*background-color: #2D3354;*/
+	/*Above is my backUp color*/
+   background: url(https://image.ibb.co/kEUEhQ/Avatar_World_Map.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100vh; 
+}
+
+body {
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+header {
+	border: 2px solid black;
+	background-color: rgba(255, 255, 255, 0.5);
+	margin-top: 20px;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+form {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+h1 {
+	font-size: 45px;
+	margin-left: auto;
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+}
+
+ul {
+	padding: 0;
+	margin:0;
+	list-style-type: none;
+	width: 100%;
+	/*overflow: auto;*/
+}
+
+li {
+	list-style: none;
+	display:inline-block;
+}
+
+footer {
+	text-align: center;
+	font-family: 'Acme', sans-serif;
+	display: inline;
+	clear:both;
+	width: 100%;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(176, 208, 244, 0.9);
+}
+
+img {
+	height:300px;
+	width: 400px;
+	margin-bottom: 10px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.maintext {
+	border: 2px solid black;
+	background-color: rgba(176, 208, 244, 0.9);
+	margin-top: 30px;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: 33px;
+	text-align: center;
+	padding: 20px;	
+	font-family: 'Berkshire Swash', cursive;
+}
+
+.feedback_page {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.feedback_page_content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+
+.container {
+  margin-bottom: 20px;
+}
+
+.make_inline {
+	display: inline-block;
+}
+
+.questionBox {
+	border: 2px solid black;
+	background-color: rgba(176, 208, 244, 0.9);
+	text-align: center;
+	padding: 40px;
+	margin-left: 2.5%;
+    margin-right: 2.5%;
+	font-size: 30px;
+	font-family: 'Berkshire Swash', cursive;
+}
+
+
+.answerBox {
+  box-sizing: border-box;
+  display: inline-block;
+	border: 2px solid black;
+	padding: 40px;
+	width: 40%;
+	margin-left: 5%;
+	margin-right: 4.4%;
+	margin-bottom:20px;
+	font-size: 20px;
+	font-family:'Acme', sans-serif;
+}
+
+.answerBoxColorA {
+	background-color: rgba(196, 0, 0,0.8);
+}
+
+.answerBoxColorB {
+	background-color: rgba(7, 147, 255, 0.8);
+}
+
+.answerBoxColorC {
+	background-color: rgba(70, 201, 14, 0.8);
+}
+
+.answerBoxColorD {
+	background-color: rgba(199, 250, 252, 0.8);
+}
+
+.userScore {
+	margin-top: 80px;
+	width:100%;
+	margin-left: 10%;
+	margin-right:10%;
+}
+
+.scoreBox1, .scoreBox2 {
+	border: 2px solid black;
+	background-color: rgba(232, 247, 64, 0.8);
+	width: 160px
+	height:80px;
+	border-radius: 40px;
+	display: inline;
+	padding: 20px;
+	font-size: 20px;
+    font-family: 'Acme', sans-serif;
+
+}
+
+.submitAnswerButton {
+	position: relative;
+	float: right;
+	font-family: 'Berkshire Swash', cursive;
+}
+
+
+.feedback_page_content {
+	border: 2px solid black;
+	background-color: rgb(244, 205, 61);
+	text-align: center;
+}
+
+.message_header {
+	font-size: 50px;
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+}
+
+.feedback_page_button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 200px;
+}
+
+.answerExplaination {
+	padding-bottom: 10px;
+    padding-top: 5px;
+    font-size: 30px;
+    font-family: 'Acme', sans-serif;
+}
+.final_page {
+	border: 2px solid black;
+	background-color: rgba(176, 208, 244, 0.7);
+	text-align: center;
+	margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-family: 'Berkshire Swash', cursive;
+    margin-bottom: 100px;
+
+}
+
+.play_again_button {
+	margin-left: auto;
+	margin-right: auto;
+}
+.bootstrap .btn {
+	font-family: 'Berkshire Swash', cursive;
+}
+
+/*Code for responsive form (boxes and buttons*/
+@media (max-width: 843px) {
+	body {
+		margin-bottom: 75px;
+	}
+
+ .answerBox {
+ 	width: 100%;
+ 	margin-left: 0%;
+ 	padding: 25px;
+ }
+
+ .bootstrap .btn {
+ 	display:block;
+ 	margin-right: auto;
+ 	margin-left: auto;
+ }
+
+ .submitAnswerButton {
+ 	float: none;
+ }
+
+.scoreBox1, .scoreBox2 {
+	display:block;
+	margin-right: 20%;
+	text-align: center;
+}
+
+
+}

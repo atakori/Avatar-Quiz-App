@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Avatar the last Airbender Quiz</title>
+	<link rel="stylesheet" type="text/css" href="styles/modifiedBootstrap.css">
+	<link rel="stylesheet" type="text/css" href="styles/basicPrototype.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Acme|Berkshire+Swash|Lobster|Permanent+Marker" rel="stylesheet">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<!-- Start Page -->
+	<header role= "banner">
+		<h1> Avatar the Last Airbender Quiz</h1>
+	</header>
+	<main role = "main">
+		<section class="start_page"> 
+			<div class="bootstrap maintext">
+				<p> Think you know the world of Avatar? It's time to put your airbending knowledge to the test </p>
+				<button role= "button" class = "start_quiz_button btn btn-success btn-lg" type= "submit"> Let's do this! </button>
+			</div>
+		</section>
+	<!-- Question Page -->
+		<section class= "question_page">
+			<form class= "question_form">
+				<h2 class= "questionBox"> Enter Question Here in this box</h2>
+					<div class= "container">
+					<ul> 
+						<li class  = "answerBox answerBoxColorA"> 
+							<label for="answer" >
+								<input type = "radio" id="answer_A" name="answer"> <span class = "answer_text_A"> Answer#1 </span>
+							</label> 
+						</li>
+						<li class = "answerBox answerBoxColorB"> 
+							<label for="answer" >
+								<input type = "radio" id="answer_B"name="answer"> <span class = "answer_text_B"> Answer#2 </span>
+							</label> 
+						</li>
+						<li class = "answerBox answerBoxColorC"> 
+							<label for="answer" >
+								<input type = "radio" id="answer_C" name="answer"> <span class = "answer_text_C"> Answer#3 </span>
+							</label> 
+						</li>
+						<li class = "answerBox answerBoxColorD"> 
+							<label for="answer" >
+								<input type = "radio" id="answer_D" name="answer"> <span class = "answer_text_D"> Answer#4 </span>
+							</label> 
+						</li>
+					</ul>
+				<div class= "bootstrap">
+					<button class = "submitAnswerButton btn btn-success btn-lg" type= "submit"> Submit Answer </button>
+				</div>
+				</div>
+
+			</form>
+
+			<div class = "userScore">
+				<p class = "scoreBox1"> Question: 1/ 10</p>
+				<p class = "scoreBox2"> Airbender Knowledge: 0/10 </p>
+			</div>
+		</section>
+<!-- Feedback Page -->
+		<section id= "modal" class = "feedback_page">
+			<div class= "feedback_page_content bootstrap"> 
+			</div>
+		</section>
+
+<!-- Final Page -->
+		<section class = "final_page bootstrap">
+		</section>
+
+	<footer role= "contentinfo">
+		<p> Made with a passion for code -- ADT</p>
+	</footer>
+
+	</main>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="src/startPage.js"></script>
+<script type="text/javascript" src="src/feedbackPage.js" ></script>
+<script type="text/javascript" src="src/questionPage.js" ></script>
+<script type="text/javascript" src="src/finalPage.js" ></script>
+
+</body>
+</html> 
